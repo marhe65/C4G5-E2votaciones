@@ -1,14 +1,14 @@
-from Modelos.Partido import Partido
-from Modelos.Resultado import Resultado
-from Repositorios.RepositorioCandidato import RepositorioCandidato
 from Repositorios.RepositorioResultado import RepositorioResultado
+from Repositorios.RepositorioCandidato import RepositorioCandidato
 from Repositorios.RepositorioPartido import RepositorioPartido
+from Modelos.Partido import Partido
 from Modelos.Candidato import Candidato
+from Modelos.Resultado import Resultado
 class ControladorCandidato():
     def __init__(self):
         self.repositorioCandidato = RepositorioCandidato()
-        self.repositorioResultado = RepositorioResultado()
         self.repositorioPartido = RepositorioPartido()
+        self.repositorioResultado = RepositorioResultado()
 
     def index(self):
         return self.repositorioCandidato.findAll()
@@ -22,11 +22,11 @@ class ControladorCandidato():
         return elCandidato.__dict_
 
     def update(self, id, infoCandidato):
-        candidatoActual = Candidato(self.repositorioCandidato.findById(id))
-        candidatoActual.cedula = infoCandidato["cedula"]
-        candidatoActual.numero_resolucion = infoCandidato["numero de resolucion"]
-        candidatoActual.nombre = infoCandidato["nombre"]
-        candidatoActual.apellido = infoCandidato["apellido"]
+        candidatoActual=Candidato(self.repositorioCandidato.findById(id))
+        candidatoActual.numero = infoCandidato["Numero de resolución"]
+        candidatoActual.cedula = infoCandidato["Cedula"]
+        candidatoActual.nombre = infoCandidato["Nombre"]
+        candidatoActual.apellido = infoCandidato["Apellido"]
         return self.repositorioCandidato.save(candidatoActual)
 
     def delete(self, id):
