@@ -1,5 +1,5 @@
 # C4G5-E2votaciones
-Desarrollo de aplicación web para la registradurìa Nacional de Colombia como evidencia final del ciclo 4 de Misión TIC 2022 
+Desarrollo de aplicación web para la Registraduría Nacional de Colombia como evidencia final del ciclo 4 de Misión TIC 2022 
 de la Universidad Nacional de Colombia.
 
 El proyecto consta de Backend y Frontend
