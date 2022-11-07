@@ -1,0 +1,6 @@
+{
+  "url-backend": "127.0.0.1",
+  "port": 9999,
+  "data-db-connection": "mongodb+srv://pirulin:pirulin1965@cluster0.xbvjvci.mongodb.net/bd-Registraduria-votaciones2022?retryWrites=true&w=majority",
+  "name-db": "bd-Registraduria-votaciones2022"
+}
